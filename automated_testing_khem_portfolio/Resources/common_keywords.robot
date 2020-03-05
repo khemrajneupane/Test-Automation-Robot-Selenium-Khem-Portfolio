@@ -2,7 +2,7 @@
 Library  SeleniumLibrary
 *** Variables ***
 ${HOME_PAGE}   https://khem-portfolio.herokuapp.com/  #http://localhost:3000/
-${BROWSER}      chrome  #headlesschrome
+${BROWSER}     chrome   #headlesschrome
 *** Keywords ***
 Begin Web Test
     open browser    ${HOME_PAGE}    ${BROWSER}

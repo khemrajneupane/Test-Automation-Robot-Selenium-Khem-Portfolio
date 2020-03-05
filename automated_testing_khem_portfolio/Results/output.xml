@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot rpa="false" generated="20200304 19:50:08.205" generator="Robot 3.1.2 (Python 2.7.17 on darwin)">
+<robot rpa="false" generated="20200305 23:28:01.074" generator="Robot 3.1.2 (Python 2.7.17 on darwin)">
 <suite source="/Users/khemraj/PycharmProjects/automated_testing_khem_portfolio/tests/automated_testing_khem_portfolio.robot" id="s1" name="Automated Testing Khem Portfolio">
 <kw type="setup" name="Begin Web Test" library="common_keywords">
 <kw name="Open Browser" library="SeleniumLibrary">
@@ -8,10 +8,10 @@
 <arg>${HOME_PAGE}</arg>
 <arg>${BROWSER}</arg>
 </arguments>
-<msg timestamp="20200304 19:50:10.426" level="INFO">Opening browser 'chrome' to base url 'http://localhost:3000/'.</msg>
-<status status="PASS" endtime="20200304 19:51:43.669" starttime="20200304 19:50:10.424"></status>
+<msg timestamp="20200305 23:28:03.560" level="INFO">Opening browser 'chrome' to base url 'https://khem-portfolio.herokuapp.com/'.</msg>
+<status status="PASS" endtime="20200305 23:29:10.215" starttime="20200305 23:28:03.559"></status>
 </kw>
-<status status="PASS" endtime="20200304 19:51:43.670" starttime="20200304 19:50:10.422"></status>
+<status status="PASS" endtime="20200305 23:29:10.218" starttime="20200305 23:28:03.558"></status>
 </kw>
 <test id="s1-t1" name="Loads Homepage &amp; Fails Login">
 <kw name="Open HomePage" library="home_page">
@@ -19,16 +19,16 @@
 &amp; maximizes the browser</doc>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" endtime="20200304 19:51:46.163" starttime="20200304 19:51:43.677"></status>
+<status status="PASS" endtime="20200305 23:29:10.516" starttime="20200305 23:29:10.223"></status>
 </kw>
 <kw name="Wait Until Page Contains" library="SeleniumLibrary">
 <doc>Waits until ``text`` appears on the current page.</doc>
 <arguments>
 <arg>Please login to the application</arg>
 </arguments>
-<status status="PASS" endtime="20200304 19:51:46.223" starttime="20200304 19:51:46.164"></status>
+<status status="PASS" endtime="20200305 23:29:10.536" starttime="20200305 23:29:10.516"></status>
 </kw>
-<status status="PASS" endtime="20200304 19:51:46.224" starttime="20200304 19:51:43.673"></status>
+<status status="PASS" endtime="20200305 23:29:10.536" starttime="20200305 23:29:10.222"></status>
 </kw>
 <kw name="Give WrongCredentials&amp;ClearFields" library="home_page">
 <doc>Provide wrong credentials in the input field and see error pop up message. Then clears the input fields.</doc>
@@ -38,8 +38,8 @@
 <arg>id=filled-adornment-username</arg>
 <arg>biansha1</arg>
 </arguments>
-<msg timestamp="20200304 19:51:46.231" level="INFO">Typing text 'biansha1' into text field 'id=filled-adornment-username'.</msg>
-<status status="PASS" endtime="20200304 19:51:49.108" starttime="20200304 19:51:46.225"></status>
+<msg timestamp="20200305 23:29:10.541" level="INFO">Typing text 'biansha1' into text field 'id=filled-adornment-username'.</msg>
+<status status="PASS" endtime="20200305 23:29:11.714" starttime="20200305 23:29:10.537"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -47,24 +47,24 @@
 <arg>id=filled-adornment-password</arg>
 <arg>biansha1</arg>
 </arguments>
-<msg timestamp="20200304 19:51:49.109" level="INFO">Typing text 'biansha1' into text field 'id=filled-adornment-password'.</msg>
-<status status="PASS" endtime="20200304 19:51:49.562" starttime="20200304 19:51:49.108"></status>
+<msg timestamp="20200305 23:29:11.715" level="INFO">Typing text 'biansha1' into text field 'id=filled-adornment-password'.</msg>
+<status status="PASS" endtime="20200305 23:29:11.899" starttime="20200305 23:29:11.715"></status>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <doc>Clicks the button identified by ``locator``.</doc>
 <arguments>
 <arg>id=login</arg>
 </arguments>
-<msg timestamp="20200304 19:51:49.563" level="INFO">Clicking button 'id=login'.</msg>
-<status status="PASS" endtime="20200304 19:51:49.741" starttime="20200304 19:51:49.562"></status>
+<msg timestamp="20200305 23:29:11.900" level="INFO">Clicking button 'id=login'.</msg>
+<status status="PASS" endtime="20200305 23:29:12.072" starttime="20200305 23:29:11.899"></status>
 </kw>
 <kw name="Wait Until Element Contains" library="SeleniumLibrary">
 <doc>Waits until the element ``locator`` contains ``text``.</doc>
 <arguments>
-<arg>xpath=//*[@id="root"]/div/div/div[4]</arg>
+<arg>xpath=//*[@id="root"]/div/div/div[3]</arg>
 <arg>Username- biansha1 &amp; Password- biansha1' are wrong credentials!</arg>
 </arguments>
-<status status="PASS" endtime="20200304 19:51:51.097" starttime="20200304 19:51:49.742"></status>
+<status status="PASS" endtime="20200305 23:29:12.698" starttime="20200305 23:29:12.073"></status>
 </kw>
 <kw name="Press Key" library="SeleniumLibrary">
 <doc>*DEPRECATED in SeleniumLibrary 4.0.* use `Press Keys` instead.</doc>
@@ -72,8 +72,8 @@
 <arg>id=filled-adornment-username</arg>
 <arg>\\08</arg>
 </arguments>
-<msg timestamp="20200304 19:51:51.097" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<status status="PASS" endtime="20200304 19:51:51.249" starttime="20200304 19:51:51.097"></status>
+<msg timestamp="20200305 23:29:12.699" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
+<status status="PASS" endtime="20200305 23:29:12.765" starttime="20200305 23:29:12.698"></status>
 </kw>
 <kw name="Press Key" library="SeleniumLibrary">
 <doc>*DEPRECATED in SeleniumLibrary 4.0.* use `Press Keys` instead.</doc>
@@ -81,8 +81,8 @@
 <arg>id=filled-adornment-username</arg>
 <arg>\\08</arg>
 </arguments>
-<msg timestamp="20200304 19:51:51.250" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<status status="PASS" endtime="20200304 19:51:51.362" starttime="20200304 19:51:51.249"></status>
+<msg timestamp="20200305 23:29:12.766" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
+<status status="PASS" endtime="20200305 23:29:12.801" starttime="20200305 23:29:12.766"></status>
 </kw>
 <kw name="Press Key" library="SeleniumLibrary">
 <doc>*DEPRECATED in SeleniumLibrary 4.0.* use `Press Keys` instead.</doc>
@@ -90,8 +90,8 @@
 <arg>id=filled-adornment-username</arg>
 <arg>\\08</arg>
 </arguments>
-<msg timestamp="20200304 19:51:51.363" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<status status="PASS" endtime="20200304 19:51:51.490" starttime="20200304 19:51:51.363"></status>
+<msg timestamp="20200305 23:29:12.801" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
+<status status="PASS" endtime="20200305 23:29:12.831" starttime="20200305 23:29:12.801"></status>
 </kw>
 <kw name="Press Key" library="SeleniumLibrary">
 <doc>*DEPRECATED in SeleniumLibrary 4.0.* use `Press Keys` instead.</doc>
@@ -99,8 +99,8 @@
 <arg>id=filled-adornment-username</arg>
 <arg>\\08</arg>
 </arguments>
-<msg timestamp="20200304 19:51:51.490" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<status status="PASS" endtime="20200304 19:51:51.608" starttime="20200304 19:51:51.490"></status>
+<msg timestamp="20200305 23:29:12.832" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
+<status status="PASS" endtime="20200305 23:29:12.902" starttime="20200305 23:29:12.832"></status>
 </kw>
 <kw name="Press Key" library="SeleniumLibrary">
 <doc>*DEPRECATED in SeleniumLibrary 4.0.* use `Press Keys` instead.</doc>
@@ -108,8 +108,8 @@
 <arg>id=filled-adornment-username</arg>
 <arg>\\08</arg>
 </arguments>
-<msg timestamp="20200304 19:51:51.609" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<status status="PASS" endtime="20200304 19:51:51.706" starttime="20200304 19:51:51.609"></status>
+<msg timestamp="20200305 23:29:12.903" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
+<status status="PASS" endtime="20200305 23:29:12.964" starttime="20200305 23:29:12.902"></status>
 </kw>
 <kw name="Press Key" library="SeleniumLibrary">
 <doc>*DEPRECATED in SeleniumLibrary 4.0.* use `Press Keys` instead.</doc>
@@ -117,8 +117,8 @@
 <arg>id=filled-adornment-username</arg>
 <arg>\\08</arg>
 </arguments>
-<msg timestamp="20200304 19:51:51.707" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<status status="PASS" endtime="20200304 19:51:51.751" starttime="20200304 19:51:51.707"></status>
+<msg timestamp="20200305 23:29:12.964" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
+<status status="PASS" endtime="20200305 23:29:13.036" starttime="20200305 23:29:12.964"></status>
 </kw>
 <kw name="Press Key" library="SeleniumLibrary">
 <doc>*DEPRECATED in SeleniumLibrary 4.0.* use `Press Keys` instead.</doc>
@@ -126,8 +126,8 @@
 <arg>id=filled-adornment-username</arg>
 <arg>\\08</arg>
 </arguments>
-<msg timestamp="20200304 19:51:51.751" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<status status="PASS" endtime="20200304 19:51:51.861" starttime="20200304 19:51:51.751"></status>
+<msg timestamp="20200305 23:29:13.037" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
+<status status="PASS" endtime="20200305 23:29:13.082" starttime="20200305 23:29:13.036"></status>
 </kw>
 <kw name="Press Key" library="SeleniumLibrary">
 <doc>*DEPRECATED in SeleniumLibrary 4.0.* use `Press Keys` instead.</doc>
@@ -135,8 +135,8 @@
 <arg>id=filled-adornment-username</arg>
 <arg>\\08</arg>
 </arguments>
-<msg timestamp="20200304 19:51:51.862" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<status status="PASS" endtime="20200304 19:51:51.965" starttime="20200304 19:51:51.862"></status>
+<msg timestamp="20200305 23:29:13.083" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
+<status status="PASS" endtime="20200305 23:29:13.148" starttime="20200305 23:29:13.082"></status>
 </kw>
 <kw name="Press Key" library="SeleniumLibrary">
 <doc>*DEPRECATED in SeleniumLibrary 4.0.* use `Press Keys` instead.</doc>
@@ -144,8 +144,8 @@
 <arg>id=filled-adornment-password</arg>
 <arg>\\08</arg>
 </arguments>
-<msg timestamp="20200304 19:51:51.966" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<status status="PASS" endtime="20200304 19:51:52.086" starttime="20200304 19:51:51.966"></status>
+<msg timestamp="20200305 23:29:13.149" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
+<status status="PASS" endtime="20200305 23:29:13.201" starttime="20200305 23:29:13.149"></status>
 </kw>
 <kw name="Press Key" library="SeleniumLibrary">
 <doc>*DEPRECATED in SeleniumLibrary 4.0.* use `Press Keys` instead.</doc>
@@ -153,8 +153,8 @@
 <arg>id=filled-adornment-password</arg>
 <arg>\\08</arg>
 </arguments>
-<msg timestamp="20200304 19:51:52.087" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<status status="PASS" endtime="20200304 19:51:52.203" starttime="20200304 19:51:52.086"></status>
+<msg timestamp="20200305 23:29:13.202" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
+<status status="PASS" endtime="20200305 23:29:13.250" starttime="20200305 23:29:13.202"></status>
 </kw>
 <kw name="Press Key" library="SeleniumLibrary">
 <doc>*DEPRECATED in SeleniumLibrary 4.0.* use `Press Keys` instead.</doc>
@@ -162,8 +162,8 @@
 <arg>id=filled-adornment-password</arg>
 <arg>\\08</arg>
 </arguments>
-<msg timestamp="20200304 19:51:52.203" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<status status="PASS" endtime="20200304 19:51:52.466" starttime="20200304 19:51:52.203"></status>
+<msg timestamp="20200305 23:29:13.251" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
+<status status="PASS" endtime="20200305 23:29:13.316" starttime="20200305 23:29:13.251"></status>
 </kw>
 <kw name="Press Key" library="SeleniumLibrary">
 <doc>*DEPRECATED in SeleniumLibrary 4.0.* use `Press Keys` instead.</doc>
@@ -171,8 +171,8 @@
 <arg>id=filled-adornment-password</arg>
 <arg>\\08</arg>
 </arguments>
-<msg timestamp="20200304 19:51:52.467" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<status status="PASS" endtime="20200304 19:51:52.662" starttime="20200304 19:51:52.467"></status>
+<msg timestamp="20200305 23:29:13.317" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
+<status status="PASS" endtime="20200305 23:29:13.375" starttime="20200305 23:29:13.317"></status>
 </kw>
 <kw name="Press Key" library="SeleniumLibrary">
 <doc>*DEPRECATED in SeleniumLibrary 4.0.* use `Press Keys` instead.</doc>
@@ -180,8 +180,8 @@
 <arg>id=filled-adornment-password</arg>
 <arg>\\08</arg>
 </arguments>
-<msg timestamp="20200304 19:51:52.663" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<status status="PASS" endtime="20200304 19:51:52.768" starttime="20200304 19:51:52.663"></status>
+<msg timestamp="20200305 23:29:13.376" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
+<status status="PASS" endtime="20200305 23:29:13.423" starttime="20200305 23:29:13.375"></status>
 </kw>
 <kw name="Press Key" library="SeleniumLibrary">
 <doc>*DEPRECATED in SeleniumLibrary 4.0.* use `Press Keys` instead.</doc>
@@ -189,8 +189,8 @@
 <arg>id=filled-adornment-password</arg>
 <arg>\\08</arg>
 </arguments>
-<msg timestamp="20200304 19:51:52.769" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<status status="PASS" endtime="20200304 19:51:52.812" starttime="20200304 19:51:52.769"></status>
+<msg timestamp="20200305 23:29:13.425" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
+<status status="PASS" endtime="20200305 23:29:13.455" starttime="20200305 23:29:13.424"></status>
 </kw>
 <kw name="Press Key" library="SeleniumLibrary">
 <doc>*DEPRECATED in SeleniumLibrary 4.0.* use `Press Keys` instead.</doc>
@@ -198,8 +198,8 @@
 <arg>id=filled-adornment-password</arg>
 <arg>\\08</arg>
 </arguments>
-<msg timestamp="20200304 19:51:52.812" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<status status="PASS" endtime="20200304 19:51:52.866" starttime="20200304 19:51:52.812"></status>
+<msg timestamp="20200305 23:29:13.456" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
+<status status="PASS" endtime="20200305 23:29:13.518" starttime="20200305 23:29:13.456"></status>
 </kw>
 <kw name="Press Key" library="SeleniumLibrary">
 <doc>*DEPRECATED in SeleniumLibrary 4.0.* use `Press Keys` instead.</doc>
@@ -207,18 +207,18 @@
 <arg>id=filled-adornment-password</arg>
 <arg>\\08</arg>
 </arguments>
-<msg timestamp="20200304 19:51:52.866" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<status status="PASS" endtime="20200304 19:51:52.921" starttime="20200304 19:51:52.866"></status>
+<msg timestamp="20200305 23:29:13.518" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
+<status status="PASS" endtime="20200305 23:29:13.562" starttime="20200305 23:29:13.518"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>3s</arg>
 </arguments>
-<msg timestamp="20200304 19:51:55.924" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" endtime="20200304 19:51:55.924" starttime="20200304 19:51:52.921"></status>
+<msg timestamp="20200305 23:29:16.566" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20200305 23:29:16.566" starttime="20200305 23:29:13.563"></status>
 </kw>
-<status status="PASS" endtime="20200304 19:51:55.925" starttime="20200304 19:51:46.224"></status>
+<status status="PASS" endtime="20200305 23:29:16.566" starttime="20200305 23:29:10.536"></status>
 </kw>
 <doc>This test suit opens browser, inputs wrong username &amp; passwords
 clicks the button and gets error pop up message. Then clears the text fields.</doc>
@@ -226,7 +226,7 @@ clicks the button and gets error pop up message. Then clears the text fields.</d
 <tag>home_page_wrong_sign_in</tag>
 <tag>smoke</tag>
 </tags>
-<status status="PASS" endtime="20200304 19:51:55.925" critical="yes" starttime="20200304 19:51:43.671"></status>
+<status status="PASS" endtime="20200305 23:29:16.567" critical="yes" starttime="20200305 23:29:10.219"></status>
 </test>
 <test id="s1-t2" name="Give Correct Credentials">
 <kw name="Give CorrectCredentials" library="home_page">
@@ -237,8 +237,8 @@ clicks the button and gets error pop up message. Then clears the text fields.</d
 <arg>id=filled-adornment-username</arg>
 <arg>biansha</arg>
 </arguments>
-<msg timestamp="20200304 19:51:55.929" level="INFO">Typing text 'biansha' into text field 'id=filled-adornment-username'.</msg>
-<status status="PASS" endtime="20200304 19:51:56.240" starttime="20200304 19:51:55.928"></status>
+<msg timestamp="20200305 23:29:16.570" level="INFO">Typing text 'biansha' into text field 'id=filled-adornment-username'.</msg>
+<status status="PASS" endtime="20200305 23:29:16.829" starttime="20200305 23:29:16.570"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -246,16 +246,16 @@ clicks the button and gets error pop up message. Then clears the text fields.</d
 <arg>id=filled-adornment-password</arg>
 <arg>biansha</arg>
 </arguments>
-<msg timestamp="20200304 19:51:56.241" level="INFO">Typing text 'biansha' into text field 'id=filled-adornment-password'.</msg>
-<status status="PASS" endtime="20200304 19:51:56.610" starttime="20200304 19:51:56.240"></status>
+<msg timestamp="20200305 23:29:16.830" level="INFO">Typing text 'biansha' into text field 'id=filled-adornment-password'.</msg>
+<status status="PASS" endtime="20200305 23:29:17.118" starttime="20200305 23:29:16.829"></status>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <doc>Clicks the button identified by ``locator``.</doc>
 <arguments>
 <arg>id=login</arg>
 </arguments>
-<msg timestamp="20200304 19:51:56.611" level="INFO">Clicking button 'id=login'.</msg>
-<status status="PASS" endtime="20200304 19:51:56.871" starttime="20200304 19:51:56.611"></status>
+<msg timestamp="20200305 23:29:17.119" level="INFO">Clicking button 'id=login'.</msg>
+<status status="PASS" endtime="20200305 23:29:17.295" starttime="20200305 23:29:17.118"></status>
 </kw>
 <kw name="Wait Until Element Contains" library="SeleniumLibrary">
 <doc>Waits until the element ``locator`` contains ``text``.</doc>
@@ -263,9 +263,9 @@ clicks the button and gets error pop up message. Then clears the text fields.</d
 <arg>xpath=//*[@id="root"]/div/div/div[3]</arg>
 <arg>Welcome biansha!</arg>
 </arguments>
-<status status="PASS" endtime="20200304 19:51:58.331" starttime="20200304 19:51:56.871"></status>
+<status status="PASS" endtime="20200305 23:29:18.791" starttime="20200305 23:29:17.295"></status>
 </kw>
-<status status="PASS" endtime="20200304 19:51:58.331" starttime="20200304 19:51:55.927"></status>
+<status status="PASS" endtime="20200305 23:29:18.791" starttime="20200305 23:29:16.569"></status>
 </kw>
 <doc>This test suit inputs correct credentials
 clicks the button and gets success pop up message</doc>
@@ -273,7 +273,7 @@ clicks the button and gets success pop up message</doc>
 <tag>home_page_correct_sign_in</tag>
 <tag>smoke</tag>
 </tags>
-<status status="PASS" endtime="20200304 19:51:58.332" critical="yes" starttime="20200304 19:51:55.926"></status>
+<status status="PASS" endtime="20200305 23:29:18.792" critical="yes" starttime="20200305 23:29:16.568"></status>
 </test>
 <test id="s1-t3" name="Fill In Experience From">
 <kw name="Navgate LoggedPageToExperience" library="logged_page">
@@ -283,29 +283,29 @@ clicks the button and gets success pop up message</doc>
 <arguments>
 <arg>xpath=//*[@id="responsive-navbar-nav"]/div[1]/div/a</arg>
 </arguments>
-<msg timestamp="20200304 19:51:58.336" level="INFO">Clicking element 'xpath=//*[@id="responsive-navbar-nav"]/div[1]/div/a'.</msg>
-<status status="PASS" endtime="20200304 19:51:59.785" starttime="20200304 19:51:58.336"></status>
+<msg timestamp="20200305 23:29:18.797" level="INFO">Clicking element 'xpath=//*[@id="responsive-navbar-nav"]/div[1]/div/a'.</msg>
+<status status="PASS" endtime="20200305 23:29:19.382" starttime="20200305 23:29:18.796"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>id=add-experience</arg>
 </arguments>
-<msg timestamp="20200304 19:51:59.786" level="INFO">Clicking element 'id=add-experience'.</msg>
-<status status="PASS" endtime="20200304 19:52:01.807" starttime="20200304 19:51:59.785"></status>
+<msg timestamp="20200305 23:29:19.383" level="INFO">Clicking element 'id=add-experience'.</msg>
+<status status="PASS" endtime="20200305 23:29:19.724" starttime="20200305 23:29:19.382"></status>
 </kw>
-<status status="PASS" endtime="20200304 19:52:01.808" starttime="20200304 19:51:58.335"></status>
+<status status="PASS" endtime="20200305 23:29:19.725" starttime="20200305 23:29:18.795"></status>
 </kw>
 <kw name="Fill ExperienceForm" library="experience_page">
 <doc>Clicks every input fields and fills up the experiece form and sends it to the database</doc>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
 <arguments>
-<arg>id=job-title</arg>
+<arg>id=Jjob-title</arg>
 <arg>robot enter job title</arg>
 </arguments>
-<msg timestamp="20200304 19:52:01.810" level="INFO">Typing text 'robot enter job title' into text field 'id=job-title'.</msg>
-<status status="PASS" endtime="20200304 19:52:03.136" starttime="20200304 19:52:01.809"></status>
+<msg timestamp="20200305 23:29:19.727" level="INFO">Typing text 'robot enter job title' into text field 'id=Jjob-title'.</msg>
+<status status="PASS" endtime="20200305 23:29:20.781" starttime="20200305 23:29:19.726"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -313,8 +313,8 @@ clicks the button and gets success pop up message</doc>
 <arg>id=company-name</arg>
 <arg>robot enter company name</arg>
 </arguments>
-<msg timestamp="20200304 19:52:03.137" level="INFO">Typing text 'robot enter company name' into text field 'id=company-name'.</msg>
-<status status="PASS" endtime="20200304 19:52:04.054" starttime="20200304 19:52:03.136"></status>
+<msg timestamp="20200305 23:29:20.782" level="INFO">Typing text 'robot enter company name' into text field 'id=company-name'.</msg>
+<status status="PASS" endtime="20200305 23:29:21.283" starttime="20200305 23:29:20.781"></status>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
@@ -322,9 +322,9 @@ clicks the button and gets success pop up message</doc>
 <arg>id=start-date</arg>
 <arg>\\57365</arg>
 </arguments>
-<msg timestamp="20200304 19:52:04.056" level="INFO">Sending key(s) (u'\\57365',) to id=start-date element.</msg>
-<msg timestamp="20200304 19:52:04.083" level="INFO">Sending keys \57365</msg>
-<status status="PASS" endtime="20200304 19:52:05.647" starttime="20200304 19:52:04.055"></status>
+<msg timestamp="20200305 23:29:21.285" level="INFO">Sending key(s) (u'\\57365',) to id=start-date element.</msg>
+<msg timestamp="20200305 23:29:21.302" level="INFO">Sending keys \57365</msg>
+<status status="PASS" endtime="20200305 23:29:22.006" starttime="20200305 23:29:21.283"></status>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
@@ -332,9 +332,9 @@ clicks the button and gets success pop up message</doc>
 <arg>id=end-date</arg>
 <arg>\\57365</arg>
 </arguments>
-<msg timestamp="20200304 19:52:05.649" level="INFO">Sending key(s) (u'\\57365',) to id=end-date element.</msg>
-<msg timestamp="20200304 19:52:05.686" level="INFO">Sending keys \57365</msg>
-<status status="PASS" endtime="20200304 19:52:06.105" starttime="20200304 19:52:05.647"></status>
+<msg timestamp="20200305 23:29:22.009" level="INFO">Sending key(s) (u'\\57365',) to id=end-date element.</msg>
+<msg timestamp="20200305 23:29:22.051" level="INFO">Sending keys \57365</msg>
+<status status="PASS" endtime="20200305 23:29:22.408" starttime="20200305 23:29:22.007"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -342,8 +342,8 @@ clicks the button and gets success pop up message</doc>
 <arg>id=job-responsibilities</arg>
 <arg>robot enter job responsibilities</arg>
 </arguments>
-<msg timestamp="20200304 19:52:06.106" level="INFO">Typing text 'robot enter job responsibilities' into text field 'id=job-responsibilities'.</msg>
-<status status="PASS" endtime="20200304 19:52:07.241" starttime="20200304 19:52:06.105"></status>
+<msg timestamp="20200305 23:29:22.409" level="INFO">Typing text 'robot enter job responsibilities' into text field 'id=job-responsibilities'.</msg>
+<status status="PASS" endtime="20200305 23:29:22.975" starttime="20200305 23:29:22.408"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -351,33 +351,33 @@ clicks the button and gets success pop up message</doc>
 <arg>id=job-rating</arg>
 <arg>5</arg>
 </arguments>
-<msg timestamp="20200304 19:52:07.242" level="INFO">Typing text '5' into text field 'id=job-rating'.</msg>
-<status status="PASS" endtime="20200304 19:52:07.408" starttime="20200304 19:52:07.241"></status>
+<msg timestamp="20200305 23:29:22.976" level="INFO">Typing text '5' into text field 'id=job-rating'.</msg>
+<status status="PASS" endtime="20200305 23:29:23.081" starttime="20200305 23:29:22.975"></status>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <doc>Clicks the button identified by ``locator``.</doc>
 <arguments>
 <arg>id=add-expn</arg>
 </arguments>
-<msg timestamp="20200304 19:52:07.408" level="INFO">Clicking button 'id=add-expn'.</msg>
-<status status="PASS" endtime="20200304 19:52:07.702" starttime="20200304 19:52:07.408"></status>
+<msg timestamp="20200305 23:29:23.082" level="INFO">Clicking button 'id=add-expn'.</msg>
+<status status="PASS" endtime="20200305 23:29:23.247" starttime="20200305 23:29:23.081"></status>
 </kw>
 <kw name="Wait Until Element Contains" library="SeleniumLibrary">
 <doc>Waits until the element ``locator`` contains ``text``.</doc>
 <arguments>
 <arg>xpath=//*[@id="root"]/div/div/div[3]</arg>
-<arg>a new work experience ROBOT ENTER JOB TITLE is just created</arg>
+<arg>a new work experience robot enter job title created!</arg>
 </arguments>
-<status status="PASS" endtime="20200304 19:52:08.541" starttime="20200304 19:52:07.703"></status>
+<status status="PASS" endtime="20200305 23:29:23.763" starttime="20200305 23:29:23.247"></status>
 </kw>
-<status status="PASS" endtime="20200304 19:52:08.541" starttime="20200304 19:52:01.808"></status>
+<status status="PASS" endtime="20200305 23:29:23.764" starttime="20200305 23:29:19.725"></status>
 </kw>
 <doc>This test suit navigates inside the logged page to fill up the experience form</doc>
 <tags>
 <tag>loggedin_page_navigation_experience</tag>
 <tag>smoke</tag>
 </tags>
-<status status="PASS" endtime="20200304 19:52:08.542" critical="yes" starttime="20200304 19:51:58.333"></status>
+<status status="PASS" endtime="20200305 23:29:23.764" critical="yes" starttime="20200305 23:29:18.793"></status>
 </test>
 <test id="s1-t4" name="Fill In Projects Form">
 <kw name="Navgate LoggedPageToProject" library="logged_page">
@@ -387,18 +387,18 @@ clicks the button and gets success pop up message</doc>
 <arguments>
 <arg>xpath=//*[@id="responsive-navbar-nav"]/div[1]/div/a</arg>
 </arguments>
-<msg timestamp="20200304 19:52:08.544" level="INFO">Clicking element 'xpath=//*[@id="responsive-navbar-nav"]/div[1]/div/a'.</msg>
-<status status="PASS" endtime="20200304 19:52:08.806" starttime="20200304 19:52:08.543"></status>
+<msg timestamp="20200305 23:29:23.768" level="INFO">Clicking element 'xpath=//*[@id="responsive-navbar-nav"]/div[1]/div/a'.</msg>
+<status status="PASS" endtime="20200305 23:29:23.857" starttime="20200305 23:29:23.767"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>id=add-project</arg>
 </arguments>
-<msg timestamp="20200304 19:52:08.807" level="INFO">Clicking element 'id=add-project'.</msg>
-<status status="PASS" endtime="20200304 19:52:11.401" starttime="20200304 19:52:08.806"></status>
+<msg timestamp="20200305 23:29:23.858" level="INFO">Clicking element 'id=add-project'.</msg>
+<status status="PASS" endtime="20200305 23:29:23.997" starttime="20200305 23:29:23.857"></status>
 </kw>
-<status status="PASS" endtime="20200304 19:52:11.401" starttime="20200304 19:52:08.543"></status>
+<status status="PASS" endtime="20200305 23:29:23.997" starttime="20200305 23:29:23.766"></status>
 </kw>
 <kw name="Fill ProjectForm" library="project_page">
 <doc>Clicks every input fields and fills up the project form and sends it to the database</doc>
@@ -408,8 +408,8 @@ clicks the button and gets success pop up message</doc>
 <arg>id=project-name</arg>
 <arg>portfolio</arg>
 </arguments>
-<msg timestamp="20200304 19:52:11.403" level="INFO">Typing text 'portfolio' into text field 'id=project-name'.</msg>
-<status status="PASS" endtime="20200304 19:52:12.599" starttime="20200304 19:52:11.402"></status>
+<msg timestamp="20200305 23:29:23.999" level="INFO">Typing text 'portfolio' into text field 'id=project-name'.</msg>
+<status status="PASS" endtime="20200305 23:29:24.315" starttime="20200305 23:29:23.999"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -417,8 +417,8 @@ clicks the button and gets success pop up message</doc>
 <arg>id=technology-name</arg>
 <arg>java springboot</arg>
 </arguments>
-<msg timestamp="20200304 19:52:12.600" level="INFO">Typing text 'java springboot' into text field 'id=technology-name'.</msg>
-<status status="PASS" endtime="20200304 19:52:13.595" starttime="20200304 19:52:12.600"></status>
+<msg timestamp="20200305 23:29:24.316" level="INFO">Typing text 'java springboot' into text field 'id=technology-name'.</msg>
+<status status="PASS" endtime="20200305 23:29:24.662" starttime="20200305 23:29:24.315"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -426,8 +426,8 @@ clicks the button and gets success pop up message</doc>
 <arg>id=project-url</arg>
 <arg>https://www.khemrajneupane.fi</arg>
 </arguments>
-<msg timestamp="20200304 19:52:13.596" level="INFO">Typing text 'https://www.khemrajneupane.fi' into text field 'id=project-url'.</msg>
-<status status="PASS" endtime="20200304 19:52:15.999" starttime="20200304 19:52:13.596"></status>
+<msg timestamp="20200305 23:29:24.663" level="INFO">Typing text 'https://www.khemrajneupane.fi' into text field 'id=project-url'.</msg>
+<status status="PASS" endtime="20200305 23:29:25.210" starttime="20200305 23:29:24.662"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -435,8 +435,8 @@ clicks the button and gets success pop up message</doc>
 <arg>id=project-type</arg>
 <arg>semi-full-stack</arg>
 </arguments>
-<msg timestamp="20200304 19:52:16.000" level="INFO">Typing text 'semi-full-stack' into text field 'id=project-type'.</msg>
-<status status="PASS" endtime="20200304 19:52:16.928" starttime="20200304 19:52:16.000"></status>
+<msg timestamp="20200305 23:29:25.211" level="INFO">Typing text 'semi-full-stack' into text field 'id=project-type'.</msg>
+<status status="PASS" endtime="20200305 23:29:25.542" starttime="20200305 23:29:25.211"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -444,33 +444,33 @@ clicks the button and gets success pop up message</doc>
 <arg>id=project-rate</arg>
 <arg>5</arg>
 </arguments>
-<msg timestamp="20200304 19:52:16.929" level="INFO">Typing text '5' into text field 'id=project-rate'.</msg>
-<status status="PASS" endtime="20200304 19:52:17.137" starttime="20200304 19:52:16.928"></status>
+<msg timestamp="20200305 23:29:25.543" level="INFO">Typing text '5' into text field 'id=project-rate'.</msg>
+<status status="PASS" endtime="20200305 23:29:25.674" starttime="20200305 23:29:25.542"></status>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <doc>Clicks the button identified by ``locator``.</doc>
 <arguments>
 <arg>id=project-btn</arg>
 </arguments>
-<msg timestamp="20200304 19:52:17.137" level="INFO">Clicking button 'id=project-btn'.</msg>
-<status status="PASS" endtime="20200304 19:52:17.381" starttime="20200304 19:52:17.137"></status>
+<msg timestamp="20200305 23:29:25.675" level="INFO">Clicking button 'id=project-btn'.</msg>
+<status status="PASS" endtime="20200305 23:29:26.095" starttime="20200305 23:29:25.674"></status>
 </kw>
 <kw name="Wait Until Element Contains" library="SeleniumLibrary">
 <doc>Waits until the element ``locator`` contains ``text``.</doc>
 <arguments>
 <arg>xpath=//*[@id="root"]/div/div/div[3]</arg>
-<arg>A new project in JAVA SPRINGBOOT technology is just added</arg>
+<arg>a new blog https://www.khemrajneupane.fi by java springboot added</arg>
 </arguments>
-<status status="PASS" endtime="20200304 19:52:18.522" starttime="20200304 19:52:17.382"></status>
+<status status="PASS" endtime="20200305 23:29:26.600" starttime="20200305 23:29:26.096"></status>
 </kw>
-<status status="PASS" endtime="20200304 19:52:18.523" starttime="20200304 19:52:11.402"></status>
+<status status="PASS" endtime="20200305 23:29:26.601" starttime="20200305 23:29:23.998"></status>
 </kw>
 <doc>This test suit navigates inside the logged page to fill up the projects form</doc>
 <tags>
 <tag>loggedin_page_navigation_projects</tag>
 <tag>smoke</tag>
 </tags>
-<status status="PASS" endtime="20200304 19:52:18.523" critical="yes" starttime="20200304 19:52:08.542"></status>
+<status status="PASS" endtime="20200305 23:29:26.601" critical="yes" starttime="20200305 23:29:23.764"></status>
 </test>
 <test id="s1-t5" name="Logout Session">
 <kw name="Navgate Logout" library="logout_page">
@@ -480,44 +480,44 @@ clicks the button and gets success pop up message</doc>
 <arguments>
 <arg>id=logout</arg>
 </arguments>
-<msg timestamp="20200304 19:52:18.525" level="INFO">Clicking element 'id=logout'.</msg>
-<status status="PASS" endtime="20200304 19:52:21.738" starttime="20200304 19:52:18.525"></status>
+<msg timestamp="20200305 23:29:26.606" level="INFO">Clicking element 'id=logout'.</msg>
+<status status="PASS" endtime="20200305 23:29:27.601" starttime="20200305 23:29:26.605"></status>
 </kw>
 <kw name="Wait Until Page Contains" library="SeleniumLibrary">
 <doc>Waits until ``text`` appears on the current page.</doc>
 <arguments>
 <arg>Please login to the application</arg>
 </arguments>
-<status status="PASS" endtime="20200304 19:52:21.855" starttime="20200304 19:52:21.739"></status>
+<status status="PASS" endtime="20200305 23:29:27.614" starttime="20200305 23:29:27.602"></status>
 </kw>
-<status status="PASS" endtime="20200304 19:52:21.856" starttime="20200304 19:52:18.524"></status>
+<status status="PASS" endtime="20200305 23:29:27.614" starttime="20200305 23:29:26.604"></status>
 </kw>
 <doc>This test suit navigates to login homepage by logging out the current user session</doc>
-<status status="PASS" endtime="20200304 19:52:21.856" critical="yes" starttime="20200304 19:52:18.523"></status>
+<status status="PASS" endtime="20200305 23:29:27.614" critical="yes" starttime="20200305 23:29:26.602"></status>
 </test>
 <kw type="teardown" name="End Web Test" library="common_keywords">
 <doc>creates a log file here, and finally closes the browser</doc>
 <kw name="Log Location" library="SeleniumLibrary">
 <doc>Logs and returns the current browser window URL.</doc>
-<msg timestamp="20200304 19:52:21.866" level="INFO">http://localhost:3000/</msg>
-<status status="PASS" endtime="20200304 19:52:21.906" starttime="20200304 19:52:21.859"></status>
+<msg timestamp="20200305 23:29:27.626" level="INFO">https://khem-portfolio.herokuapp.com/</msg>
+<status status="PASS" endtime="20200305 23:29:27.627" starttime="20200305 23:29:27.618"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>3s</arg>
 </arguments>
-<msg timestamp="20200304 19:52:24.908" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" endtime="20200304 19:52:24.908" starttime="20200304 19:52:21.906"></status>
+<msg timestamp="20200305 23:29:30.629" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20200305 23:29:30.629" starttime="20200305 23:29:27.627"></status>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" endtime="20200304 19:52:26.382" starttime="20200304 19:52:24.908"></status>
+<status status="PASS" endtime="20200305 23:29:31.571" starttime="20200305 23:29:30.629"></status>
 </kw>
-<status status="PASS" endtime="20200304 19:52:26.382" starttime="20200304 19:52:21.859"></status>
+<status status="PASS" endtime="20200305 23:29:31.571" starttime="20200305 23:29:27.618"></status>
 </kw>
 <doc>This is UI testing of the Portfolio-Web-Page of Khem Raj Neupane</doc>
-<status status="PASS" endtime="20200304 19:52:26.382" starttime="20200304 19:50:08.208"></status>
+<status status="PASS" endtime="20200305 23:29:31.571" starttime="20200305 23:28:01.090"></status>
 </suite>
 <statistics>
 <total>
@@ -536,21 +536,21 @@ clicks the button and gets success pop up message</doc>
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20200304 19:51:51.097" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<msg timestamp="20200304 19:51:51.250" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<msg timestamp="20200304 19:51:51.363" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<msg timestamp="20200304 19:51:51.490" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<msg timestamp="20200304 19:51:51.609" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<msg timestamp="20200304 19:51:51.707" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<msg timestamp="20200304 19:51:51.751" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<msg timestamp="20200304 19:51:51.862" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<msg timestamp="20200304 19:51:51.966" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<msg timestamp="20200304 19:51:52.087" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<msg timestamp="20200304 19:51:52.203" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<msg timestamp="20200304 19:51:52.467" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<msg timestamp="20200304 19:51:52.663" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<msg timestamp="20200304 19:51:52.769" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<msg timestamp="20200304 19:51:52.812" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<msg timestamp="20200304 19:51:52.866" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
+<msg timestamp="20200305 23:29:12.699" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
+<msg timestamp="20200305 23:29:12.766" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
+<msg timestamp="20200305 23:29:12.801" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
+<msg timestamp="20200305 23:29:12.832" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
+<msg timestamp="20200305 23:29:12.903" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
+<msg timestamp="20200305 23:29:12.964" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
+<msg timestamp="20200305 23:29:13.037" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
+<msg timestamp="20200305 23:29:13.083" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
+<msg timestamp="20200305 23:29:13.149" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
+<msg timestamp="20200305 23:29:13.202" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
+<msg timestamp="20200305 23:29:13.251" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
+<msg timestamp="20200305 23:29:13.317" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
+<msg timestamp="20200305 23:29:13.376" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
+<msg timestamp="20200305 23:29:13.425" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
+<msg timestamp="20200305 23:29:13.456" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
+<msg timestamp="20200305 23:29:13.518" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
 </errors>
 </robot>

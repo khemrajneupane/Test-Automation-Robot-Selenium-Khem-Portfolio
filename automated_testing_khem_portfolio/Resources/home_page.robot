@@ -16,7 +16,7 @@ Give WrongCredentials&ClearFields
     Input Text  id=filled-adornment-username    biansha1
     Input Text  id=filled-adornment-password    biansha1
     Click Button  id=login
-    Wait Until Element Contains  xpath=//*[@id="root"]/div/div/div[4]  Username- biansha1 & Password- biansha1' are wrong credentials!
+    Wait Until Element Contains  xpath=//*[@id="root"]/div/div/div[3]  Username- biansha1 & Password- biansha1' are wrong credentials!
     press key   id=filled-adornment-username   \\08
     press key   id=filled-adornment-username   \\08
     press key   id=filled-adornment-username   \\08

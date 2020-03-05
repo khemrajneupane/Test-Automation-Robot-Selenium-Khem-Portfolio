@@ -13,6 +13,6 @@ Fill ProjectForm
     Input Text      id=project-type         semi-full-stack
     Input Text      id=project-rate         5
     Click Button    id=project-btn
-    Wait Until Element Contains     xpath=//*[@id="root"]/div/div/div[3]     A new project in JAVA SPRINGBOOT technology is just added
+    Wait Until Element Contains     xpath=//*[@id="root"]/div/div/div[3]     a new blog https://www.khemrajneupane.fi by java springboot added
 
 #robot -d results tests/automated_testing_khem_portfolio.robot
